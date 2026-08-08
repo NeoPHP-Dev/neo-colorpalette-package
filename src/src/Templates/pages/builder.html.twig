@@ -1,0 +1,15 @@
+{# @ColorPalette/pages/builder.html.twig #}
+{% import '@ColorPalette/components/ColorPalette.macro.html.twig' as ColorPalette %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NeoPHP Color Palette</title>
+    <link rel="stylesheet" href="/packages-assets/ColorPalette/css/colorpalette.css">
+</head>
+<body style="font-family: -apple-system, sans-serif; margin: 3rem auto; max-width: 760px;">
+<h1>Color Palette</h1>
+{{ ColorPalette.render() }}
+<script src="/packages-assets/ColorPalette/js/colorpalette.js"></script>
+</body>
+</html>
