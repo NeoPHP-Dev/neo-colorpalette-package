@@ -1,0 +1,14 @@
+{
+    "name": "neophp/skeleton-package",
+    "description": "One-line description of what this package does",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vendor\\NeoPHP\\SkeletonPackage\\": "src/"
+        }
+    }
+}
