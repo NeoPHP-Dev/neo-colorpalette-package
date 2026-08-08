@@ -1,0 +1,63 @@
+{#
+    Reusable color tool component — scale generator + WCAG contrast
+    checker + HEX/RGB/HSL converter. Entirely client-side.
+
+    Usage:
+    {% import '@ColorPalette/components/ColorPalette.macro.html.twig' as ColorPalette %}
+    {{ ColorPalette.render() }}
+#}
+{% macro render(instanceId = 'cp') %}
+    <div class="cp-layout" id="{{ instanceId }}-root">
+
+        <section class="cp-section">
+            <h2>Color scale</h2>
+            <div class="cp-base-row">
+                <input type="color" class="cp-base-picker" value="#5b5fef">
+                <input type="text" class="cp-base-hex" value="#5b5fef">
+            </div>
+            <div class="cp-scale"></div>
+        </section>
+
+        <section class="cp-section">
+            <h2>Contrast checker</h2>
+            <div class="cp-contrast-row">
+                <div class="cp-contrast-field">
+                    <label>Foreground</label>
+                    <input type="color" class="cp-fg-picker" value="#16181d">
+                    <input type="text" class="cp-fg-hex" value="#16181d">
+                </div>
+                <div class="cp-contrast-field">
+                    <label>Background</label>
+                    <input type="color" class="cp-bg-picker" value="#ffffff">
+                    <input type="text" class="cp-bg-hex" value="#ffffff">
+                </div>
+            </div>
+            <div class="cp-contrast-preview">
+                <span class="cp-contrast-sample">Aa</span>
+                <div class="cp-contrast-result">
+                    <span class="cp-contrast-ratio"></span>
+                    <span class="cp-contrast-badge"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="cp-section">
+            <h2>Convert</h2>
+            <div class="cp-convert-row">
+                <div class="cp-convert-field">
+                    <label>HEX</label>
+                    <input type="text" class="cp-convert-hex" value="#5b5fef">
+                </div>
+                <div class="cp-convert-field">
+                    <label>RGB</label>
+                    <input type="text" class="cp-convert-rgb" readonly>
+                </div>
+                <div class="cp-convert-field">
+                    <label>HSL</label>
+                    <input type="text" class="cp-convert-hsl" readonly>
+                </div>
+            </div>
+        </section>
+
+    </div>
+{% endmacro %}
