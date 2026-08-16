@@ -99,15 +99,18 @@ input[type="color"] {
 
 .cp-contrast-field {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.4rem;
 }
 
 .cp-contrast-field label {
     font-size: 0.72rem;
     color: var(--cp-text-muted);
-    width: 100%;
+}
+
+.cp-contrast-field > div,
+.cp-contrast-field input[type="color"] {
+    display: inline-block;
 }
 
 .cp-contrast-preview {

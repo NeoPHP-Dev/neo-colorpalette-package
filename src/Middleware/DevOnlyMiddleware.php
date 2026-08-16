@@ -9,8 +9,9 @@ use Neo\Core\Utils\Config\ConfigManager;
 
 final class DevOnlyMiddleware implements MiddlewareInterface
 {
-    public function __construct(private readonly ConfigManager $config)
-    {
+    public function __construct(
+        private ConfigManager $config
+    ) {
     }
 
     public function handle(): bool

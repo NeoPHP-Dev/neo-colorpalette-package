@@ -16,7 +16,7 @@ colorpalette-package/
     ├── NeoColorPalettePackage.php
     ├── Middleware/
     │   └── DevOnlyMiddleware.php
-    ├── Controllers/
+    ├── Controller/
     │   └── ColorPaletteController.php
     ├── Assets/
     │   ├── css/colorpalette.css
