@@ -1,3 +1,7 @@
+## v0.2.2 — 2026-08-16
+
+- refactor: normalize namespace/directory naming to singular
+
 ## v0.2.1 — 2026-08-08
 
 - fix: add missing stylesheet
